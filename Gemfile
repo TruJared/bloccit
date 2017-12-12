@@ -16,9 +16,11 @@ source 'https://rubygems.org'
  end
 
  # #2
- group :development do
+ group :development, :test do
    # Use sqlite3 as the development database for Active Record
    gem 'sqlite3'
+   gem 'rspec-rails', '~> 3.0'
+   gem 'rails-controller-testing'
  end
 
  # Use Puma as the app server
